@@ -5,7 +5,6 @@
 - 👯 I’m looking to collaborate on any projects, whether that be a big project or some small tasks needed
 - 💬 Ask me anything about programming, related to roblox studio or outside of roblox and I can help!
 - 📫 How to reach me: @toastisaw on discord
-- 😄 Pronouns: He/Him
 
 - Current Projects:
 https://www.roblox.com/games/79434959438572/RELEASE-Crypto-Grind-Simulator
