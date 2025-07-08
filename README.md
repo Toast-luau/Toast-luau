@@ -7,8 +7,8 @@
 - 📫 How to reach me: @toastisaw on discord
 
 - Current Projects:
-https://www.roblox.com/games/79434959438572/RELEASE-Crypto-Grind-Simulator
-Solo Battlegrounds (In development)
+ - https://www.roblox.com/games/79434959438572/RELEASE-Crypto-Grind-Simulator
+ - Solo Battlegrounds (In development)
 
 <!--
 **Toast-luau/Toast-luau** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
