@@ -1,0 +1,137 @@
+.project-section {
+  padding: 40px;
+  color: var(--text-color);
+}
+
+/* Base H2 style */
+.project-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Day mode (unchecked) */
+body:not(.dark) .project-section h2 {
+  color: #9c6bff; /* purple */
+  text-shadow: 0 0 8px rgba(156, 107, 255, 0.3);
+}
+
+body.dark .project-section h2 {
+  color: #8affc1;
+  text-shadow: 0 0 10px rgba(138, 255, 193, 0.4);
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+body:not(.dark) .project-info h3 {
+  color: #9c6bff;
+}
+
+body.dark .project-info h3 {
+  color: #66ffcc
+}
+
+/* Optional pulsing animation */
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 5px rgba(138, 255, 193, 0.2), 0 0 10px rgba(138, 255, 193, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(138, 255, 193, 0.6), 0 0 20px rgba(138, 255, 193, 0.4);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(138, 255, 193, 0.2), 0 0 10px rgba(138, 255, 193, 0.3);
+  }
+}
+
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(40, 40, 55, 0.9);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  max-height: 250px;
+}
+
+.project-info h3 {
+  transition: color 0.3s;
+}
+
+.project-info p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.project-info ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 15px 0;
+}
+
+.project-info ul li {
+  margin: 5px 0;
+  color: #ddd;
+}
+
+.progress-bar {
+  background-color: #444;
+  border-radius: 8px;
+  height: 16px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  border-radius: 8px;
+  transition: width 0.5s ease;
+  transition: background-color 0.3s;
+}
+
+body:not(.dark) .progress {
+  background-color: #9c6bff;
+}
+
+body.dark .progress {
+  background-color: #00cc88;
+}
+
+small {
+  display: block;
+  margin-top: 8px;
+  color: #888;
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .project-img {
+    width: 300px;
+    height: auto;
+    max-height: none;
+  }
+
+  .project-info {
+    flex: 1;
+  }
+}

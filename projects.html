@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Toast's Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/topbar.css">
+        <link rel="stylesheet" href="CSS/content.css">
+        <link rel="stylesheet" href="CSS/projects.css">
+
+        <body id="container">
+        <div class="topbar">
+            <!-- Left side: logo -->
+            <div class="topbar-left">
+            <img src="Images/toast-icon.png" id="topbar-icon">
+            </div>
+
+            <!-- Center: Heading -->
+            <div class="topbar-center">
+            <h1>My Projects!</h1>
+            </div>
+            <!-- Right side: slider and nav -->
+            <div class="topbar-right">
+            <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" class="checkbox">
+                <div class="slider round"></div>
+            </label>
+
+            <nav>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="pastwork.html">Past Work</a></li>
+                <li><a href="contact-me.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+
+        <section class="project-section">
+        <h2>Current Projects</h2>
+
+        <!-- Solo Leveling Battlegrounds -->
+        <div class="project-card">
+            <img src="Images/solo-battlegrounds.png" alt="Solo Leveling Battlegrounds Preview" class="project-img">
+            <div class="project-info">
+            <h3>Solo Leveling: Battlegrounds</h3>
+            <p>A fast-paced PvP battlegrounds game inspired by Solo Leveling. Unlock powerful hunter skills, dash through enemies, and rise through the ranks!</p>
+            <ul>
+                <li>🌀 Ability-based combat system (1, 2, 3, 4)</li>
+                <li>📊 Stat Panel and Logic</li>
+                <li>🧍 Unique Abilities and stats, customizable with thousands of possibilities</li>
+                <li>🏆 Persistent global + server leaderboards</li>
+                <li>🏷️ Custom chat tags (group roles + gamepasses)</li>
+                <li>🛠️ Fully functional admin panel with moderation tools</li>
+                <li>🔍 Check the <a href="pastwork.html">Past Work</a> page for more cool features!</li>
+            </ul>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+            <small>Development: 80% Complete</small>
+            </div>
+        </div>
+
+        <!-- Crypto Grinding Simulator -->
+        <div class="project-card">
+            <img src="Images/crypto-grind-simulator.png" alt="Crypto Simulator Preview" class="project-img">
+            <div class="project-info">
+            <h3>Crypto Grinding Simulator</h3>
+            <p>Grind your way to the top in this Pet Sim-inspired crypto mining game. Mine coin piles, buy upgrades, and automate your empire with digital pets!</p>
+            <ul>
+                <li>💰 Dynamic coin pile spawner system</li>
+                <li>📈 Upgradable equipment + rebirths</li>
+                <li>🐶 Companion pet system with XP</li>
+                <li>🏆 Global + local leaderboards via OrderedDatastores</li>
+                <li>🏷️ Custom chat tags for player status and perks</li>
+                <li>🛠️ Admin panel with dev tools and announcements</li>
+                <li>🔍 Visit the <a href="pastwork.html">Past Work</a> page for more examples!</li>
+            </ul>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;"></div>
+            </div>
+            <small>Development: 85% Complete</small>
+            </div>
+        </div>
+        </section>
+
+
+        <script type="text/javascript">
+        const checkbox = document.getElementById('checkbox');
+        const body = document.body;
+
+        checkbox.addEventListener('change', function () {
+            body.classList.toggle('dark', this.checked);
+        });
+        </script>
+        <script src="" async defer></script>
+    </body>
+</html>

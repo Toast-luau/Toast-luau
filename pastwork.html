@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Toast's Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/topbar.css">
+        <link rel="stylesheet" href="CSS/content.css">
+        <link rel="stylesheet" href="CSS/pastwork.css">
+
+        <body id="container">
+        <div class="topbar">
+            <!-- Left side: logo -->
+            <div class="topbar-left">
+            <img src="Images/toast-icon.png" id="topbar-icon">
+            </div>
+
+            <!-- Center: Heading -->
+            <div class="topbar-center">
+            <h1>My Past Work!</h1>
+            </div>
+            <!-- Right side: slider and nav -->
+            <div class="topbar-right">
+            <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" class="checkbox">
+                <div class="slider round"></div>
+            </label>
+
+            <nav>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="pastwork.html">Past Work</a></li>
+                <li><a href="contact-me.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+
+
+    <section class="past-work">
+    <div class="section-header">
+        <h2>🛠️ Past Work</h2>
+        <p>A showcase of systems and tools I've built for Roblox experiences.</p>
+    </div>
+
+    <div class="work-grid">
+        <div class="work-card">
+        <h4>🏷️ Chat Tags</h4>
+        <img src="Images/chat-tags.png" alt="Chat Tags Preview">
+        <p class="work-description">
+            Custom Chat Tags linked to group roles and in-game roles using <code>GetRoleInGroup</code>.
+        </p>
+        </div>
+
+        <div class="work-card">
+        <h4>🏆 Leaderboards</h4>
+        <img src="Images/leaderboard.png" alt="Leaderboard Preview">
+        <p class="work-description">
+            Persistent leaderboards with <code>OrderedDatastores</code>, tracking stats globally and in servers.
+        </p>
+        </div>
+
+        <div class="work-card">
+        <h4>🛡️ Admin Panels</h4>
+        <img src="Images/admin-panel.png" alt="Admin Panel Preview">
+        <p class="work-description">
+            Admin tools with <code>Kick</code>, <code>Ban</code>, and <code>Announce</code> functionality for dev support, as well as many more custom functions tailored to your personal experience.
+        </p>
+        </div>
+
+        <div class="work-card">
+        <h4>💰 Coin Pile System</h4>
+        <img src="Images/coin-piles.png" alt="Coin Pile Preview">
+        <p class="work-description">
+            Randomized coin pile spawner with HP, position logic, value ranges, and visuals.
+        </p>
+        </div>
+
+        <div class="work-card">
+        <h4>🎛️ Frontend Polish with Tweening</h4>
+        <img src="Images/upgrades-shop.png" alt="Upgrades Shop Preview">
+        <p class="work-description">
+            Created smooth UI transitions using Roblox’s TweenService for menus, popups, and notifications, aswell as subtle camera movement to provide an immersive experience.
+        </p>
+        </div>
+
+        <div class="work-card">
+        <h4>💻"Stats" page</h4>
+        <img src="Images/stats-page.png" alt="Stats Page Preview">
+        <p class="work-description">
+            Created a stats page, scaling various damage types (m1 and ability) as well as things like speed and cooldown reduction according to player stats.
+        </p>
+        </div>
+
+        <div class="work-card">
+        <h4>Abilities Page</h4>
+        <img src="Images/abilities-page.png" alt="Abilities Page Preview">
+        <p class="work-description">
+            Created an abilities page, enabling the user to select and use functional abilities, scaling damage and cooldown with their stats.
+        </p>
+        </div>
+
+        <div class="work-card">
+        <h4>NPC Pathfinding</h4>
+        <img src="Images/NPC-pathfinding" alt="Pathfinding Page Preview">
+        <p class="work-description">
+            I created an NPC pathfinding system like you see in many roblox games, especially things like bandit beaters, where the NPC will chase a player when it gets hit or can be configured to agro on a nearby player.
+        </p>
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript">
+        const checkbox = document.getElementById('checkbox');
+        const body = document.body;
+
+        checkbox.addEventListener('change', function () {
+            body.classList.toggle('dark', this.checked);
+        });
+
+            function Display(el)
+            {
+                document.getElementById(el).style.display = "block";
+            }
+
+            function Hide(el)
+            {
+                document.getElementById(el).style.display = "none";
+            }
+        </script>
+        <script src="" async defer></script>
+    </body>
+</html>
